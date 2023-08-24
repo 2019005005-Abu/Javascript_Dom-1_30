@@ -49,6 +49,24 @@ let getElementByQuerySelectorAll=document.querySelectorAll('.rt')[0];
 getElementByQuerySelectorAll.innerText="Bangladesh";
 getElementByQuerySelectorAll.style.backgroundColor="red";
 getElementByQuerySelectorAll.style.width="300px";
-getElementByQuerySelectorAll.style.textAlign="center"
+getElementByQuerySelectorAll.style.textAlign="center";
+
+let pNote=document.querySelector('pNote')
+console.log(pNote);
+
+
+// getchildElement
+//first-child-element
+let ParentDiv=document.querySelector('.ParentDiv');
+console.log(ParentDiv.firstElementChild.textContent);
+let lastChildIs=ParentDiv.lastElementChild.textContent;
+console.log(lastChildIs);
+let ChildNode=ParentDiv.children;
+console.log(ChildNode);
+//let siblingElement
+
+let Current=document.querySelector('.Current');
+console.log(Current.nextElementSibling);
+console.log(Current.previousElementSibling);
 
 
